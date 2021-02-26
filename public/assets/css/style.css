@@ -1,9 +1,11 @@
 li {
     padding: 5px;
     margin: 5px;
-    background: #faebd7;
+    font-family: 'Trebuchet MS'
   }
-  
+.orderUp{
+  background: #ac51e03d;
+}  
   .label {
     font-weight: bold;
   }
@@ -17,4 +19,46 @@ li {
   .form-group {
     margin-bottom: 5px;
   }
-  
+    
+  h1 {
+    text-align: center;
+  }
+
+  h2{
+    font-family: 'Frijole', cursive;
+  }
+
+  .devoured{
+    background: #5c595e3d;
+  }
+
+  .jumbotron{
+    font-family: 'Frijole', cursive;
+    background-color: rgba(255, 255, 255, 0.301);
+    padding-bottom: 1vh;
+  }
+
+  .form{
+    align-items: center;
+    font-family: 'Trebuchet MS'
+  }
+
+  .card{
+    padding: 2.5vw;
+    background-color: rgba(255, 255, 255, 0.555);
+  }
+
+  button{
+    font-family: 'Frijole', cursive;
+    background-color: rgba(128, 128, 128, 0.274);
+    border: rgba(63, 63, 63, 0.555);
+  }
+  img{
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      width: 10%;
+  }
+  body{
+    background-color: rgba(122, 122, 122, 0.836)
+  }
