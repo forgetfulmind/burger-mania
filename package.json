@@ -1,0 +1,24 @@
+{
+  "name": "burger-mania",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/forgetfulmind/burger-mania.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/forgetfulmind/burger-mania/issues"
+  },
+  "homepage": "https://github.com/forgetfulmind/burger-mania#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
