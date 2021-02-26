@@ -24,7 +24,7 @@ document.addEventListener('DOMContentLoaded', (event) => {
         },
 
         // make sure to serialize the JSON body
-        body: JSON.stringify(newBurg),
+        body: JSON.stringify(newBurger),
         }).then(() => {
         // Empty the form
         document.getElementById('burgerName').value = '';
@@ -55,13 +55,12 @@ document.addEventListener('DOMContentLoaded', (event) => {
             'Content-Type': 'application/json',
           },
 
-          // make sure to serialize the JSON body
-          body: JSON.stringify(newState),
+        //   // make sure to serialize the JSON body
+        //   body: JSON.stringify(newState),
         }).then((response) => {
           // Check that the response is all good
           // Reload the page so the user can see the new quote
           if (response.ok) {
-            console.log(`changed status to: ${newState}`);
             location.reload('/');
           } else {
             alert('something went wrong!');

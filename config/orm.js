@@ -16,7 +16,7 @@ selectAll(cb){
 },
 
 insertOne(name, cb){
-    const queryString = `INSERT INTO burgers (burger_name) VALUES ??;`;
+    const queryString = `INSERT INTO burgers (burger_name) VALUES (?);`;
     connection.query(
         queryString,
         [name],
@@ -30,7 +30,8 @@ insertOne(name, cb){
 },
 
 updateOne(id, cb){
-    const queryString = `UPDATE burgers SET devoured=true WHERE id=??;`;
+    //console.log(id)
+    const queryString = `UPDATE burgers SET devoured=true WHERE id=?;`;
     connection.query(
         queryString,
         [id],

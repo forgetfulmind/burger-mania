@@ -9,21 +9,22 @@ router.get('/', (req, res) => {
       const hbsObject = {
         burgers: data,
       };
-      console.log(hbsObject);
-      res.render('index', hbsObject);
+      //console.log(hbsObject);
+      res.render('index', (hbsObject));
     });
   });
 
   router.post('/api/burgers', (req, res) => {
-    cat.insertOne(req.body.name, (result) => {
+    burger.create(req.body.name, (result) => {
       // Send back the ID of the new quote
       res.json({ id: result.id });
     });
   });
 
   router.put('/api/burgers/:id', (req, res) => {
-    const id = `${req.params.id}`;
-    cat.update(
+    const id = req.params.id;
+    //console.log(id)
+    burger.update(
       id,
       (result) => {
         // if (result.changedRows == 0) {
